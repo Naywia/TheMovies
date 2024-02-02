@@ -15,10 +15,10 @@
                 <DataTemplate>
                     <StackPanel>
                         <Label Content="{Binding Title}"/>
-                        <Label Content="{Binding Runtime}"/>
+                        <Label Content="{Binding RunTime}"/>
                         <Label Content="{Binding Producer}"/>
-                        <Label Content="{Binding Releasedate}"/>
-                        <Label Content="{Binding Showtime}"/>
+                        <Label Content="{Binding ReleaseDate}"/>
+                        <Label Content="{Binding ShowTime}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
