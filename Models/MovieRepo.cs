@@ -9,7 +9,7 @@ namespace TheMovies.Models
 
         public MovieRepo()
         {
-            using StreamReader sr = new StreamReader("C:\\Users\\Altin\\OneDrive\\Dokumenter\\The Movies2\\TheMovies\\Models\\Pr38_TheMovies.CSV");
+            using StreamReader sr = new StreamReader("../../../Models/Pr38_TheMovies.CSV");
             _ = sr.ReadLine();
             string line;
             while ((line = sr.ReadLine()) != null)
@@ -29,15 +29,8 @@ namespace TheMovies.Models
             Movie newMovie = new(title, runtime, genres, producer, releasedate, showtime);
             _movies.Add(newMovie);
 
-            // This if statement, checks if the movies exists in the list
-            if (GetMovie(title) != null)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            // This returns if the movies exists in the list
+            return GetMovie(title) != null;
         }
 
 
