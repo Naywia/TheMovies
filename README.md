@@ -8,7 +8,7 @@ The Movies is a school project developed using WPF. It is designed to display in
 * Display available seats in the theater  
 
 ## Installation
-This project is not meant for installation as it is still a school project under development.  
+This project is not intended for installation as it is a school project, still under development.
 
 ## Technologies
 #### Language: 
